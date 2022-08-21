@@ -1,7 +1,6 @@
 const express = require('express')
-const host = 'localhost'
-// process.enc.PORT || 
-const port = 3000
+
+const port = process.enc.PORT || 3000
 const app = express()
 
 app.get('/', (req,res) => {
@@ -9,5 +8,5 @@ app.get('/', (req,res) => {
 })
 
 app.listen(port, (req,res) => {
-    console.log(`server is open : http://${host}:${port}`);
-})
+    console.log(`server is open : ${port}`);
+}) 
