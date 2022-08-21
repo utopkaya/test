@@ -1,6 +1,7 @@
 const express = require('express')
-const host = 'https://uniclubs-test.herokuapp.com/'
-const port = process.enc.PORT || 3000
+const host = 'localhost'
+// process.enc.PORT || 
+const port = 3000
 const app = express()
 
 app.get('/', (req,res) => {
